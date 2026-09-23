@@ -132,7 +132,7 @@ def print_header():
      ██║██║  ██║██║╚██╔╝██║    ██╔══╝  ██╔══██╗██╔══╝  ██╔══╝   ███╔╝  ██╔══╝  ██╔══██╗
      ██║██████╔╝██║ ╚═╝ ██║    ██║     ██║  ██║███████╗███████╗███████╗███████╗██║  ██║
      ╚═╝╚═════╝ ╚═╝     ╚═╝    ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
-                                                            BY ZIEDEV 2025
+                                                            BY SURJOLIVE 2025
     """)
     print(Fore.CYAN + "=" * 70)
 
@@ -177,8 +177,8 @@ def check_network_connectivity():
         return False
 
 def run_batch_file(parameter="", show_output=True):
-    """Run the zied.cmd batch file with optional parameters."""
-    batch_file = Path(__file__).parent / "zied.cmd"
+    """Run the surjolive.cmd batch file with optional parameters."""
+    batch_file = Path(__file__).parent / "surjolive.cmd"
     
     if not batch_file.exists():
         print(Fore.RED + f"\n❌ Error: Batch file not found at {batch_file}")
@@ -212,7 +212,7 @@ def run_batch_file(parameter="", show_output=True):
     try:
         if parameter:
             show_progress(f"Running command with parameter: {parameter}")
-            log_message(f"Executing: zied.cmd {parameter}", "INFO")
+            log_message(f"Executing: surjolive.cmd {parameter}", "INFO")
             
             # Use PowerShell to run the batch file with better encoding support
             cmd = f'cmd.exe /c "chcp 65001 >nul && \"{batch_file}\" {parameter}"'
@@ -236,7 +236,7 @@ def run_batch_file(parameter="", show_output=True):
                 )
         else:
             show_progress("Launching IDM Activation Script")
-            log_message("Executing: zied.cmd", "INFO")
+            log_message("Executing: surjolive.cmd", "INFO")
             cmd = f'cmd.exe /c "chcp 65001 >nul && \"{batch_file}\""'
             process = subprocess.run(cmd, shell=True, check=False)
 
@@ -257,7 +257,7 @@ def run_batch_file(parameter="", show_output=True):
         print(Fore.RED + f"\n❌ An error occurred: {e}")
         log_message(f"Batch execution error: {e}", "ERROR")
         if "introuvable" in str(e) or "not found" in str(e).lower():
-            print(Fore.YELLOW + "\nTip: Make sure zied.cmd is in the same folder as this script.")
+            print(Fore.YELLOW + "\nTip: Make sure surjolive.cmd is in the same folder as this script.")
         return False
     finally:
         input(Fore.YELLOW + "\nPress Enter to return to the main menu...")
@@ -512,7 +512,7 @@ def check_for_updates():
         # Try to fetch the latest version from GitHub
         result = subprocess.run(
             ['powershell', '-Command',
-             "(Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/zinzied/IDM-Freezer/main/version.txt' -UseBasicParsing).Content.Trim()"],
+             "(Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/surjolive/IDM-Freezer/main/version.txt' -UseBasicParsing).Content.Trim()"],
             capture_output=True,
             text=True,
             timeout=10
@@ -530,7 +530,7 @@ def check_for_updates():
                 log_message(f"Up to date (v{VERSION})", "INFO")
             else:
                 print(Fore.YELLOW + "\n⚠️  A new version is available!")
-                print(Fore.CYAN + "Visit https://github.com/zinzied/IDM-Freezer to download the latest version.")
+                print(Fore.CYAN + "Visit https://github.com/surjolive/IDM-Freezer to download the latest version.")
                 log_message(f"Update available: {latest_version}", "INFO")
         else:
             print(Fore.RED + "\n❌ Failed to check for updates.")
@@ -674,7 +674,7 @@ def main():
             log_message("Opened IDM download page", "INFO")
             input(Fore.YELLOW + "Press Enter to continue...")
         elif choice == "7":
-            webbrowser.open("https://github.com/zinzied/IDM-Freezer")
+            webbrowser.open("https://github.com/surjolive/IDM-Freezer")
             print(Fore.GREEN + "\n✓ Browser opened!")
             log_message("Opened GitHub repository", "INFO")
             input(Fore.YELLOW + "Press Enter to continue...")

@@ -2,7 +2,7 @@
 
 # IDM Tool - Unified Activation Manager
 
-**ZIEDEV 2026 | https://github.com/zinzied**
+**SURJOLIVE 2026 | https://github.com/surjolive**
 
 A single-file menu-driven tool to activate, freeze, reset, and manage Internet Download Manager (IDM) on Windows. Simply run the .exe as Administrator.
 
@@ -10,9 +10,9 @@ A single-file menu-driven tool to activate, freeze, reset, and manage Internet D
 
 **Latest Release (v1.0):**
 
-👉 [Download IDM-Freezer-Activation-Tool.exe](https://github.com/zinzied/IDM-Freezer-Activation-Tool/releases/download/v1.0/IDM-Freezer-Activation-Tool.exe)
+👉 [Download IDM-Freezer-Activation-Tool.exe](https://github.com/surjolive/IDM-Freezer-Activation-Tool/releases/download/v1.0/IDM-Freezer-Activation-Tool.exe)
 
-> Or get it from the [Releases page](https://github.com/zinzied/IDM-Freezer-Activation-Tool/releases)
+> Or get it from the [Releases page](https://github.com/surjolive/IDM-Freezer-Activation-Tool/releases)
 
 ---
 
@@ -20,13 +20,13 @@ A single-file menu-driven tool to activate, freeze, reset, and manage Internet D
 
 | File | Description |
 |------|-------------|
-| [IDM-Freezer-Activation-Tool.exe](https://github.com/zinzied/IDM-Freezer-Activation-Tool/releases/download/v1.0/IDM-Freezer-Activation-Tool.exe) | Standalone executable — no Python or additional files needed |
+| [IDM-Freezer-Activation-Tool.exe](https://github.com/surjolive/IDM-Freezer-Activation-Tool/releases/download/v1.0/IDM-Freezer-Activation-Tool.exe) | Standalone executable — no Python or additional files needed |
 
 ---
 
 ## How to Run
 
-1. Download `IDM-Freezer-Activation-Tool.exe` from: https://github.com/zinzied/IDM-Freezer-Activation-Tool/releases/download/v1.0/IDM-Freezer-Activation-Tool.exe
+1. Download `IDM-Freezer-Activation-Tool.exe` from: https://github.com/surjolive/IDM-Freezer-Activation-Tool/releases/download/v1.0/IDM-Freezer-Activation-Tool.exe
 
 2. Double-click the downloaded `IDM-Freezer-Activation-Tool.exe`
 3. Run it as Administrator
