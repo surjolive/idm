@@ -512,7 +512,7 @@ def check_for_updates():
         # Try to fetch the latest version from GitHub
         result = subprocess.run(
             ['powershell', '-Command',
-             "(Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/surjolive/IDM-Freezer/main/version.txt' -UseBasicParsing).Content.Trim()"],
+             "(Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/surjolive/idm/main/version.txt' -UseBasicParsing).Content.Trim()"],
             capture_output=True,
             text=True,
             timeout=10
@@ -530,7 +530,7 @@ def check_for_updates():
                 log_message(f"Up to date (v{VERSION})", "INFO")
             else:
                 print(Fore.YELLOW + "\n⚠️  A new version is available!")
-                print(Fore.CYAN + "Visit https://github.com/surjolive/IDM-Freezer to download the latest version.")
+                print(Fore.CYAN + "Visit https://github.com/surjolive/idm/releases to download the latest version.")
                 log_message(f"Update available: {latest_version}", "INFO")
         else:
             print(Fore.RED + "\n❌ Failed to check for updates.")
@@ -674,7 +674,7 @@ def main():
             log_message("Opened IDM download page", "INFO")
             input(Fore.YELLOW + "Press Enter to continue...")
         elif choice == "7":
-            webbrowser.open("https://github.com/surjolive/IDM-Freezer")
+            webbrowser.open("https://github.com/surjolive/idm")
             print(Fore.GREEN + "\n✓ Browser opened!")
             log_message("Opened GitHub repository", "INFO")
             input(Fore.YELLOW + "Press Enter to continue...")

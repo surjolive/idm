@@ -8,11 +8,11 @@ A single-file menu-driven tool to activate, freeze, reset, and manage Internet D
 
 ## ⬇️ Download
 
-**Latest Release (v1.0):**
+**Latest Release (v3.0):**
 
-👉 [Download IDM-Freezer-Activation-Tool.exe](https://github.com/surjolive/IDM-Freezer-Activation-Tool/releases/download/v1.0/IDM-Freezer-Activation-Tool.exe)
+👉 [Download the source archive](https://github.com/surjolive/idm/archive/refs/tags/v3.0.zip)
 
-> Or get it from the [Releases page](https://github.com/surjolive/IDM-Freezer-Activation-Tool/releases)
+> Or get it from the [Releases page](https://github.com/surjolive/idm/releases)
 
 ---
 
@@ -20,17 +20,15 @@ A single-file menu-driven tool to activate, freeze, reset, and manage Internet D
 
 | File | Description |
 |------|-------------|
-| [IDM-Freezer-Activation-Tool.exe](https://github.com/surjolive/IDM-Freezer-Activation-Tool/releases/download/v1.0/IDM-Freezer-Activation-Tool.exe) | Standalone executable — no Python or additional files needed |
+| [Source archive](https://github.com/surjolive/idm/archive/refs/tags/v3.0.zip) | Python and Windows batch source files |
 
 ---
 
 ## How to Run
 
-1. Download `IDM-Freezer-Activation-Tool.exe` from: https://github.com/surjolive/IDM-Freezer-Activation-Tool/releases/download/v1.0/IDM-Freezer-Activation-Tool.exe
-
-2. Double-click the downloaded `IDM-Freezer-Activation-Tool.exe`
-3. Run it as Administrator
-4. The menu appears
+1. Download the [source archive](https://github.com/surjolive/idm/archive/refs/tags/v3.0.zip)
+2. Install the dependency with `pip install -r requirements.txt`
+3. Run `IDM Manager v3.0.py` as Administrator on Windows
 
 ---
 

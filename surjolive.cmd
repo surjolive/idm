@@ -397,7 +397,7 @@ set _erl=%errorlevel%
 if %_erl%==8 exit /b
 if %_erl%==7 goto :_check_updates
 if %_erl%==6 goto :_check_status
-if %_erl%==5 start https://github.com/surjolive/IDM-Freezer & goto MainMenu
+if %_erl%==5 start https://github.com/surjolive/idm & goto MainMenu
 if %_erl%==4 start https://www.internetdownloadmanager.com/download.html & goto MainMenu
 if %_erl%==3 goto :_reset
 if %_erl%==2 (set frz=1&goto :_activate)
@@ -427,7 +427,7 @@ if not defined _int (
 echo Current version: %ver%
 echo:
 
-%psc% "$ErrorActionPreference = 'Stop'; try { $response = Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/surjolive/IDM-Freezer/main/version.txt' -UseBasicParsing; $latestVersion = $response.Content.Trim(); Write-Output $latestVersion } catch { Write-Output 'Error' }" > "%temp%\idm_version.txt"
+%psc% "$ErrorActionPreference = 'Stop'; try { $response = Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/surjolive/idm/main/version.txt' -UseBasicParsing; $latestVersion = $response.Content.Trim(); Write-Output $latestVersion } catch { Write-Output 'Error' }" > "%temp%\idm_version.txt"
 
 set /p _latest_ver=<"%temp%\idm_version.txt"
 del /f /q "%temp%\idm_version.txt" %nul%
@@ -445,7 +445,7 @@ if "%ver%"=="%_latest_ver%" (
 ) else (
     call :_color %Yellow% "A new version is available!"
     echo:
-    echo Visit https://github.com/surjolive/IDM-Freezer to download the latest version.
+    echo Visit https://github.com/surjolive/idm/releases to download the latest version.
 )
 
 echo %line%
